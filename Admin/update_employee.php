@@ -10,7 +10,7 @@ if(isset($_POST['updatedata']))
 	$employee_department_id =$_POST['employee_department_id'];
 	$employee_address =$_POST['employee_address'];
 	$employee_birthday =$_POST['employee_birthday'];
-	$query="UPDATE `employee` SET `name`='$employee_name',`email`='$employee_email',`mobile`='$employee_mobile',`password`='$employee_password',`department_id`='$employee_department_id',`address`='$employee_address',`birthday`='$employee_birthday' WHERE id='$id'";
+	$query="UPDATE `employee` SET `name`='$employee_name',`email`='$employee_email',`phone`='$employee_mobile',`password`='$employee_password',`department_id`='$employee_department_id',`address`='$employee_address',`birthday`='$employee_birthday' WHERE id='$id'";
 	$query_run =mysqli_query($con ,$query);
 	if($query_run)
 	{

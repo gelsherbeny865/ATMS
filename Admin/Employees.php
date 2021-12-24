@@ -37,7 +37,7 @@ if(isset($_POST['submit'])){
 	$birthday=mysqli_real_escape_string($con,$_POST['employeea_birthday']);
 	$employeea_late=mysqli_real_escape_string($con,$_POST['employeea_late']);
 	
-		$sql="insert into employee(name,email,mobile,password,department_id,address,birthday,role,late_id) values('$name','$email','$mobile','$password','$department_id','$address','$birthday','3' ,'$employeea_late')";
+		$sql="insert into employee(name,email,phone,password,department_id,address,birthday,role,late_id) values('$name','$email','$mobile','$password','$department_id','$address','$birthday','3' ,'$employeea_late')";
 	mysqli_query($con,$sql);
 	header('location:Employees.php');
 	die();
@@ -65,7 +65,7 @@ if(isset($_POST['submit'])){
 	<!--------------------------------------------------------------------------------------->
 		<style>
 		.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link{
-			color:  #00c292;
+			color: rgb(194,83,111);
 			font-size: 18px;
 			font-weight: 500;
 		}
@@ -77,7 +77,7 @@ if(isset($_POST['submit'])){
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="admin.php">
-		<img src="../img/logo.png" alt="Logo" width="150px" height="30px">
+		<img src="../img/download.jpg" alt="Logo" width="50px" height="30px">
 	  </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -98,9 +98,9 @@ if(isset($_POST['submit'])){
         </li>
       </ul>
 		<form  class="form-inline my-2 my-lg-0">
-		<i  style="color: #00c292;font-size: 20px" class="fas fa-user-alt"></i>&nbsp;
-		<h6 style="color: #00c292;display: inline">Hello  | <?php echo $_SESSION['USER_NAME'] ?></h6>&nbsp;
-		<a href="logout.php" data-toggle="tooltip" data-placement="top" title="logout"><i  style="color: #00c292;font-size: 25px" class="fas fa-sign-out-alt"></i></a>
+		<i  style="color: rgb(194,83,111);font-size: 20px" ></i>&nbsp;
+		<h6 style="color: rgb(194,83,111);display: inline">Hello  | <?php echo $_SESSION['USER_NAME'] ?></h6>&nbsp;
+		<a href="logout.php" data-toggle="tooltip" data-placement="top" title="logout"><i  style="color:rgb(194,83,111);font-size: 25px" class="fas fa-sign-out-alt" ></i></a>
 		</form>
     </div>
   </div>
@@ -108,13 +108,13 @@ if(isset($_POST['submit'])){
 	<!--End navbar------------------------------------------------------------------>
 <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <a class="nav-link active" id="employee-tab" data-bs-toggle="tab" href="#employee" role="tab" aria-controls="employee" aria-selected="true"><i class="fas fa-users"></i>&nbsp;Employee</a>
-    <a class="nav-link" id="Add_employee-tab" data-bs-toggle="tab" href="#Add_employee" role="tab" aria-controls="Add_employee" aria-selected="false"><i class="fas fa-cog"></i>&nbsp;Add Employee</a>
+    <a  style="color:rgb(194,83,111)"class="nav-link active" id="employee-tab" data-bs-toggle="tab" href="#employee" role="tab" aria-controls="employee" aria-selected="true"><i ></i>&nbsp;Employee</a>
+    <a  style="color:rgb(194,83,111)"class="nav-link" id="Add_employee-tab" data-bs-toggle="tab" href="#Add_employee" role="tab" aria-controls="Add_employee" aria-selected="false"><i ></i>&nbsp;Add Employee</a>
   </div>
 </nav>
 <div class="tab-content" id="nav-tabContent">
   <div class="tab-pane fade show active" id="employee" role="tabpanel" aria-labelledby="employee-tab">
-	  <h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: #00c292;"><i class="fas fa-users"></i>&nbsp;Employee</h1>
+	  <h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color:rgb(194,83,111);"><i ></i>&nbsp;Employee</h1>
 		<div class="container">
 			<div class="row">
 						 <div style="height: 100px auto;background-color: white;border-radius: 20px;text-align: center" class="table-responsive-sm">
@@ -163,7 +163,7 @@ if(isset($_POST['submit'])){
 						</div>  
   </div> 
   <div class="tab-pane fade" id="Add_employee" role="tabpanel" aria-labelledby="Add_employee-tab">
-	  	  <h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: #00c292;"><i class="fas fa-cog"></i>&nbsp;Add Employee</h1>
+	  	  <h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color:rgb(194,83,111);"><i ></i>&nbsp;Add Employee</h1>
 		<div class="container">
 			<div align="center" class="row">
 						 <form name="myform"  method="post" onsubmit="return validateform()" class="col-md-12">

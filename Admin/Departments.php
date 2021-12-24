@@ -34,7 +34,7 @@ if(isset($_POST['Department_name'])){
 	<!--------------------------------------------------------------------------------------->
 		<style>
 		.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link{
-			color:  #00c292;
+			color: rgb(194,83,111);
 			font-size: 18px;
 			font-weight: 500;
 		}
@@ -46,7 +46,7 @@ if(isset($_POST['Department_name'])){
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="admin.php">
-		<img src="../img/logo.png" alt="Logo" width="150px" height="30px">
+		<img src="../img/download.jpg" alt="Logo" width="50px" height="30px">
 	  </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -67,9 +67,9 @@ if(isset($_POST['Department_name'])){
         </li>
       </ul>
 		<form  class="form-inline my-2 my-lg-0">
-		<i  style="color: #00c292;font-size: 20px" class="fas fa-user-alt"></i>&nbsp;
-		<h6 style="color: #00c292;display: inline">Hello  | <?php echo $_SESSION['USER_NAME'] ?></h6>&nbsp;
-		<a href="logout.php" data-toggle="tooltip" data-placement="top" title="logout"><i  style="color: #00c292;font-size: 25px" class="fas fa-sign-out-alt"></i></a>
+		<i  style="color: rgb(194,83,111);font-size: 20px" ></i>&nbsp;
+		<h6 style="color: rgb(194,83,111);display: inline">Hello  | <?php echo $_SESSION['USER_NAME'] ?></h6>&nbsp;
+		<a href="logout.php" data-toggle="tooltip" data-placement="top" title="logout"><i  style="color: rgb(194,83,111);font-size: 25px" class="fas fa-sign-out-alt" ></i></a>
 		</form>
     </div>
   </div>
@@ -77,13 +77,13 @@ if(isset($_POST['Department_name'])){
 	<!--End navbar------------------------------------------------------------------>
 <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <a class="nav-link active" id="department-tab" data-bs-toggle="tab" href="#department" role="tab" aria-controls="department" aria-selected="true"><i class="fas fa-sitemap"></i>&nbsp;Department</a>
-    <a class="nav-link" id="Adddp-tab" data-bs-toggle="tab" href="#Adddp" role="tab" aria-controls="Adddp" aria-selected="false"><i class="fas fa-cog"></i>&nbsp;Add Department</a>
+    <a  style="color:rgb(194,83,111)"class="nav-link active" id="department-tab" data-bs-toggle="tab" href="#department" role="tab" aria-controls="department" aria-selected="true"><i ></i>&nbsp;Department</a>
+    <a  style="color:rgb(194,83,111)"class="nav-link" id="Adddp-tab" data-bs-toggle="tab" href="#Adddp" role="tab" aria-controls="Adddp" aria-selected="false"><i ></i>&nbsp;Add Department</a>
   </div>
 </nav>
 <div class="tab-content" id="nav-tabContent">
   <div class="tab-pane fade show active" id="department" role="tabpanel" aria-labelledby="department-tab">
-	  <h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: #00c292;"><i class="fas fa-sitemap"></i>&nbsp;Department</h1>
+	  <h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color:rgb(194,83,111);"><i ></i>&nbsp;Department</h1>
 		<div class="container">
 			<div class="row">
 						 <div style="height: 100px auto;background-color: white;border-radius: 20px;text-align: center" class="table-responsive-sm">
@@ -124,7 +124,7 @@ if(isset($_POST['Department_name'])){
 						</div>  
   </div> 
   <div class="tab-pane fade" id="Adddp" role="tabpanel" aria-labelledby="Adddp-tab">
-	  	  <h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: #00c292;"><i class="fas fa-cog"></i>&nbsp;Add Department</h1>
+	  	  <h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color:rgb(194,83,111);"><i ></i>&nbsp;Add Department</h1>
 		<div class="container">
 			<div align="center" class="row">
 						 <form onsubmit="return validateform()" name="myform" method="post" class="col-md-12">

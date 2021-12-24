@@ -12,7 +12,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 		$_SESSION['USER_ID'] = $row['id'];
 		$_SESSION['USER_NAME'] = $row['name'];
 		$_SESSION['email'] = $row['email'];
-		$_SESSION['mobile'] = $row['mobile'];
+		$_SESSION['phone'] = $row['phone'];
 		$_SESSION['password'] = $row['password'];
 		$_SESSION['deparment_id'] = $row['department_id'];
 		$_SESSION['address'] = $row['address'];
@@ -66,11 +66,12 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 <body class="text-center">  
 	<main class="form-signin">
 	  <form action="" method="post">
-		  <h6 style="color:#fff">Click To Check IN Attendance</h6>
-		<a href="check_in.php"><img class="mb-4" src="../img/icons8-login-64.png" alt=">Attendance Form" width="80" height="80"></a>
-		<h1 class="h3 mb-3 fw-normal"> Sign In</h1>
+		  <h6 style="color:rgb(194,83,111)"><b>Sign in to  Check Attendance</b></h6>
+		<br><br>
 		<label for="inputEmail" class="visually-hidden">Email address</label>
+	
 		<input name="email" type="email" id="inputEmail" class="form-control" placeholder="Enter Your Email address" required autofocus>
+		
 		<label for="inputPassword" class="visually-hidden">Password</label>
 		<input name="password" type="password" id="inputPassword" class="form-control" placeholder="Enter Your Password" required>
 		<button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>

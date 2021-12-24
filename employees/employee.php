@@ -20,7 +20,7 @@ if(isset($_SESSION['USER_ID'])){
 	$row=mysqli_fetch_assoc($res);
 	$name=$row['name'];
 	$email=$row['email'];
-	$mobile=$row['mobile'];
+	$mobile=$row['phone'];
 	$password=$row['password'];
 	$department_id=$row['department_id'];
 	$address=$row['address'];
@@ -29,15 +29,15 @@ if(isset($_SESSION['USER_ID'])){
 if(isset($_POST['submit'])){
 	$name=mysqli_real_escape_string($con,$_POST['name']);
 	$email=mysqli_real_escape_string($con,$_POST['email']);
-	$mobile=mysqli_real_escape_string($con,$_POST['mobile']);
+	$mobile=mysqli_real_escape_string($con,$_POST['phone']);
 	$password=mysqli_real_escape_string($con,$_POST['password']);
 	$department_id=mysqli_real_escape_string($con,$_POST['department_id']);
 	$address=mysqli_real_escape_string($con,$_POST['address']);
 	$birthday=mysqli_real_escape_string($con,$_POST['birthday']);
 	if($id>0){
-		$sql="update employee set name='$name',email='$email',mobile='$mobile',password='$password',department_id='$department_id',address='$address',birthday='$birthday' where id='$id'";
+		$sql="update employee set name='$name',email='$email',phone='$mobile',password='$password',department_id='$department_id',address='$address',birthday='$birthday' where id='$id'";
 	}else{
-		$sql="insert into employee(name,email,mobile,password,department_id,address,birthday,role) values('$name','$email','$mobile','$password','$department_id','$address','$birthday','3')";
+		$sql="insert into employee(name,email,phone,password,department_id,address,birthday,role) values('$name','$email','$mobile','$password','$department_id','$address','$birthday','3')";
 	}
 	mysqli_query($con,$sql);
 	header('location:employee.php');
@@ -77,35 +77,33 @@ if(isset($_POST['submit'])){
 <!--Start navbar------------------------------------------------------------------>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-		<img src="../img/logo.png" alt="Logo" width="150px" height="30px">
-	  </a>
+   
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="employee_home.php">Home</a>
+          <a   style="color:rgb(194,83,111);"class="nav-link" href="employee_home.php">Home</a>
         </li>
 		  <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="employee.php">Profile</a>
+          <a   style="color:rgb(194,83,111);"class="nav-link active" aria-current="page" href="employee.php">Profile</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="LeavingR.php">Leaving Requests</a>
+          <a  style="color:rgb(194,83,111);" class="nav-link" href="LeavingR.php">Leaving Requests</a>
         </li>
       </ul>
 		    <form class="form-inline my-2 my-lg-0">
-		<i  style="color: #00c292;font-size: 20px" class="fas fa-user-alt"></i>&nbsp;
-		<h6 style="color: #00c292;display: inline">Hello  | <?php echo $_SESSION['USER_NAME'] ?></h6>&nbsp;
-		<a href="../Admin/logout.php" data-toggle="tooltip" data-placement="top" title="logout"><i  style="color: #00c292;font-size: 25px" class="fas fa-sign-out-alt"></i></a>
+		<i  style="color: rgb(194,83,111);font-size: 20px" class="fas fa-user-alt"></i>&nbsp;
+		<h6 style="color: rgb(194,83,111);display: inline">Hello  | <?php echo $_SESSION['USER_NAME'] ?></h6>&nbsp;
+		<a href="../Admin/logout.php" data-toggle="tooltip" data-placement="top" title="logout"><i  style="color:rgb(194,83,111);font-size: 25px" class="fas fa-sign-out-alt"></i></a>
     </form>
     </div>
   </div>
 </nav>
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true"><i class="fas fa-user-edit"></i>&nbsp;Profile</a>
+    <a  style="color: rgb(194,83,111)"class="nav-link active" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true"><i style="color: rgb(194,83,111)"class="fas fa-user-edit"></i>&nbsp;Profile</a>
   </li>
 	</ul>
 <div class="tab-content" id="myTabContent">
@@ -113,7 +111,7 @@ if(isset($_POST['submit'])){
                <div class="row">
                   <div class="col-lg-12">
                      <div class="card">
-                        <div class="card-header"><strong>Profile Employee</strong><small> Form</small></div>
+                        <div class="card-header"><strong style="color: rgb(194,83,111)" >My Profile </strong></div>
                         <div class="card-body card-block">
                            <form method="post">
 							   <div class="form-group">

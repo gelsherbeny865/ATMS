@@ -34,7 +34,7 @@ if(isset($_POST['Leaving_type'])){
 	<!--------------------------------------------------------------------------------------->
 		<style>
 		.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link{
-			color:  #00c292;
+			color: rgb(194,83,111);
 			font-size: 18px;
 			font-weight: 500;
 		}
@@ -46,7 +46,7 @@ if(isset($_POST['Leaving_type'])){
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="admin.php">
-		<img src="../img/logo.png" alt="Logo" width="150px" height="30px">
+		<img src="../img/download.jpg" alt="Logo" width="50px" height="30px">
 	  </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -67,9 +67,9 @@ if(isset($_POST['Leaving_type'])){
         </li>
       </ul>
 		<form  class="form-inline my-2 my-lg-0">
-		<i  style="color: #00c292;font-size: 20px" class="fas fa-user-alt"></i>&nbsp;
-		<h6 style="color: #00c292;display: inline">Hello  | <?php echo $_SESSION['USER_NAME'] ?></h6>&nbsp;
-		<a href="logout.php" data-toggle="tooltip" data-placement="top" title="logout"><i  style="color: #00c292;font-size: 25px" class="fas fa-sign-out-alt"></i></a>
+		<i  style="color: rgb(194,83,111);font-size: 20px" ></i>&nbsp;
+		<h6 style="color:rgb(194,83,111);display: inline">Hello  | <?php echo $_SESSION['USER_NAME'] ?></h6>&nbsp;
+		<a href="logout.php" data-toggle="tooltip" data-placement="top" title="logout"><i  style="color:rgb(194,83,111);font-size: 25px" class="fas fa-sign-out-alt" ></i></a>
 		</form>
     </div>
   </div>
@@ -78,15 +78,15 @@ if(isset($_POST['Leaving_type'])){
 <!--*****************************First page******************************************************-->
 <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <a class="nav-link active" id="Leaving_t-tab" data-bs-toggle="tab" href="#Leaving_t" role="tab" aria-controls="Leaving_t" aria-selected="true"><i class="fas fa-sitemap"></i>&nbsp;Leaving Type</a>
-    <a class="nav-link" id="Addleave-tab" data-bs-toggle="tab" href="#Addleave" role="tab" aria-controls="Addleave" aria-selected="false"><i class="fas fa-cog"></i>&nbsp;Add Leave Type</a>
+    <a  style="color:rgb(194,83,111)" class="nav-link active" id="Leaving_t-tab" data-bs-toggle="tab" href="#Leaving_t" role="tab" aria-controls="Leaving_t" aria-selected="true"><i></i>&nbsp;Leaving Type</a>
+    <a  style="color:rgb(194,83,111)"class="nav-link" id="Addleave-tab" data-bs-toggle="tab" href="#Addleave" role="tab" aria-controls="Addleave" aria-selected="false"><i ></i>&nbsp;Add Leave Type</a>
   </div>
 </nav>
 <!--------------*******************************************************************************-->
 <!--*****************************secund page******************************************************-->
 <div class="tab-content" id="nav-tabContent">
   <div class="tab-pane fade show active" id="Leaving_t" role="tabpanel" aria-labelledby="Leaving_t-tab">
-	  <h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: #00c292;"><i class="fas fa-sitemap"></i>&nbsp; Leaveing Type</h1>
+	  <h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: rgb(194,83,111);"><i></i>&nbsp; Leaveing Type</h1>
 		<div class="container">
 			<div class="row">
 						 <div style="height: 100px auto;background-color: white;border-radius: 20px;text-align: center" class="table-responsive-sm">
@@ -127,7 +127,7 @@ if(isset($_POST['Leaving_type'])){
 						</div>  
   </div> 
   <div class="tab-pane fade" id="Addleave" role="tabpanel" aria-labelledby="Addleave-tab">
-	  	  <h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: #00c292;"><i class="fas fa-cog"></i>&nbsp;Add Leave Type</h1>
+	  	  <h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: rgb(194,83,111);"><i ></i>&nbsp;Add Leave Type</h1>
 		<div class="container">
 			<div align="center" class="row">
 						 <form onsubmit="return validateform()" name="myform" method="post" class="col-md-12">

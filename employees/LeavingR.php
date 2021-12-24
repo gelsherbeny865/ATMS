@@ -71,28 +71,26 @@ if(isset($_POST['submit'])){
 <!--Start navbar------------------------------------------------------------------>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-		<img src="../img/logo.png" alt="Logo" width="150px" height="30px">
-	  </a>
+   
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link " href="employee_home.php">Home</a>
+          <a  style="color: rgb(194,83,111)"class="nav-link " href="employee_home.php">Home</a>
         </li>
 		  <li class="nav-item">
-          <a class="nav-link " href="employee.php">Profile</a>
+          <a  style="color: rgb(194,83,111)"class="nav-link " href="employee.php">Profile</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link active"  aria-current="page" href="LeavingR.php">Leaving Requests</a>
+          <a  style="color: rgb(194,83,111)"class="nav-link active"  aria-current="page" href="LeavingR.php">Leaving Requests</a>
         </li>
       </ul>
 	<form class="form-inline my-2 my-lg-0">
-		<i  style="color: #00c292;font-size: 20px" class="fas fa-user-alt"></i>&nbsp;
-		<h6 style="color: #00c292;display: inline">Hello  | <?php echo $_SESSION['USER_NAME'] ?></h6>&nbsp;
-		<a href="../Admin/logout.php" data-toggle="tooltip" data-placement="top" title="logout"><i  style="color: #00c292;font-size: 25px" class="fas fa-sign-out-alt"></i></a>
+		<i  style="color:rgb(194,83,111);font-size: 20px" ></i>&nbsp;
+		<h6 style="color:rgb(194,83,111);display: inline">Hello  | <?php echo $_SESSION['USER_NAME'] ?></h6>&nbsp;
+		<a href="../Admin/logout.php" data-toggle="tooltip" data-placement="top" title="logout"><i  style="color: rgb(194,83,111);font-size: 25px" class="fas fa-sign-out-alt"></i></a>
     </form>
     </div>
   </div>
@@ -101,15 +99,15 @@ if(isset($_POST['submit'])){
 	
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="leaveR-tab" data-bs-toggle="tab" href="#leaveR" role="tab" aria-controls="leaveR" aria-selected="true"><i class="fas fa-level-up-alt"></i>&nbsp;Leave Request</a>
+    <a  style="color: rgb(194,83,111)"class="nav-link active" id="leaveR-tab" data-bs-toggle="tab" href="#leaveR" role="tab" aria-controls="leaveR" aria-selected="true"><i ></i>&nbsp;Leave Request</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="Absences-tab" data-bs-toggle="tab" href="#Absences" role="tab" aria-controls="Absences" aria-selected="false"><i class="fas fa-plus-circle"></i>&nbsp;Add Leave Request</a>
+    <a  style="color: rgb(194,83,111)"class="nav-link" id="Absences-tab" data-bs-toggle="tab" href="#Absences" role="tab" aria-controls="Absences" aria-selected="false"><i ></i>&nbsp;Add Leave Request</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="leaveR" role="tabpanel" aria-labelledby="leaveR-tab">
-			<h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: #00c292;"><i class="fas fa-level-up-alt"></i>&nbsp;Your Leaveing Requests</h1>
+			<h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: rgb(194,83,111);"><i class=></i>&nbsp;Your Leaveing Requests</h1>
 	  <div class="container">
                <div class="row">    
 					<div style="height: 100px auto;background-color:white;border-radius: 20px;text-align: center;" class="table-responsive-sm">
@@ -158,11 +156,11 @@ if(isset($_POST['submit'])){
                      </div>
                   </div>
   <div class="tab-pane fade" id="Absences" role="tabpanel" aria-labelledby="Absences-tab">
-	  			<h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: #00c292;"><i class="fas fa-plus-circle"></i>&nbsp;Add Leave Request</h1>
+	  			<h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color:rgb(194,83,111);"><i ></i>&nbsp;Add Leave Request</h1>
 		  <div class="container">
 		      <div class="row">
 				  <div style="height: 100px auto;background-color:white;border-radius: 20px">
-                        <div class="card-header"><strong>Leave Type</strong><small> Form</small></div>
+                        <div style="color:rgb(194,83,111);"  class="card-header"><strong>Leave Type</strong><small> Form</small></div>
                         <div class="card-body card-block">
                            <form   onsubmit="return leavevalidate()"  name="leaveform" method="post">
 						   

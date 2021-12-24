@@ -45,7 +45,7 @@ $res=mysqli_query($con,$sql);
 	<!--------------------------------------------------------------------------------------->
 	<style>
 		.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link{
-			color:  #00c292;
+			color:  rgb(194,83,111);
 			font-size: 18px;
 			font-weight: 500;
 		}
@@ -57,7 +57,7 @@ $res=mysqli_query($con,$sql);
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="admin.php">
-		<img src="../img/logo.png" alt="Logo" width="150px" height="30px">
+		<img src="../img/download.jpg" alt="Logo" width="50px" height="30px">
 	  </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -78,27 +78,27 @@ $res=mysqli_query($con,$sql);
         </li>
       </ul>
 		    <form class="form-inline my-2 my-lg-0">
-		<i  style="color: #00c292;font-size: 20px" class="fas fa-user-alt"></i>&nbsp;
-		<h6 style="color: #00c292;display: inline">Hello  | <?php echo $_SESSION['USER_NAME'] ?></h6>&nbsp;
-		<a href="logout.php" data-toggle="tooltip" data-placement="top" title="logout"><i  style="color: #00c292;font-size: 25px" class="fas fa-sign-out-alt"></i></a>
+		<i  style="color:rgb(194,83,111);font-size: 20px" ></i>&nbsp;
+		<h6 style="color: rgb(194,83,111);display: inline">Hello  | <?php echo $_SESSION['USER_NAME'] ?></h6>&nbsp;
+		<a href="logout.php" data-toggle="tooltip" data-placement="top" title="logout"><i  style="color:rgb(194,83,111);font-size: 25px"  class="fas fa-sign-out-alt"></i></a>
     </form>
     </div>
   </div>
 </nav>
 	<ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item" role="presentation">
-    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-home"></i>&nbsp;Home</a>
+    <a  style="color:rgb(194,83,111)"class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i ></i>&nbsp;Home</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="Absences-tab" data-bs-toggle="tab" href="#Absences" role="tab" aria-controls="Absences" aria-selected="false"><i class="fas fa-user-times"></i>&nbsp;Absences</a>
+    <a  style="color:rgb(194,83,111)"class="nav-link" id="Absences-tab" data-bs-toggle="tab" href="#Absences" role="tab" aria-controls="Absences" aria-selected="false"><i></i>&nbsp;Absences</a>
   </li>
   <li class="nav-item" role="presentation">
-    <a class="nav-link" id="immediately-tab" data-bs-toggle="tab" href="#immediately" role="tab" aria-controls="immediately" aria-selected="false"><i class="fas fa-binoculars"></i>&nbsp;Immediately</a>
+    <a  style="color:rgb(194,83,111)"class="nav-link" id="immediately-tab" data-bs-toggle="tab" href="#immediately" role="tab" aria-controls="immediately" aria-selected="false"><i ></i>&nbsp;Attendance</a>
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-		<h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: #00c292;"><i class="fas fa-comment-alt"></i>&nbsp;R e q u e s t s</h1>
+		<h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color:rgb(194,83,111);"><i ></i>&nbsp;leaving requests</h1>
 		<div class="container">
 			<div class="row">
 						 <div style="height: 100px auto;background-color: white;border-radius: 20px;text-align: center" class="table-responsive-sm bg-white">
@@ -154,8 +154,8 @@ $res=mysqli_query($con,$sql);
 							</div>
 						</div>  
   </div>
-  <div class="tab-pane fade" id="Absences" role="tabpanel" aria-labelledby="Absences-tab">
-	  		<h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: #00c292;"><i class="fas fa-user-times"></i>&nbsp;A b s e n c e s</h1>
+  <div class="tab-pane fade" id="Absences" role="tabpanel" attendance aria-labelledby="Absences-tab">
+	  		<h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color:rgb(194,83,111);"><i></i>&nbsp;A b s e n c e s</h1>
 		<div class="container">
 			<div class="row">
 						 <div style="height: 100px auto;background-color: white;border-radius: 20px;text-align: center" class="table-responsive-sm">
@@ -203,7 +203,7 @@ $res=mysqli_query($con,$sql);
 						</div>  
   </div>
   <div class="tab-pane fade" id="immediately" role="tabpanel" aria-labelledby="immediately-tab">
-	 		<h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: #00c292;"><i class="fas fa-binoculars"></i>&nbsp;I m m e d i a t e l y</h1>
+	 		<h1 align="center" style="font-weight: 900;font-family: bitter;font-size: 50px;padding: 10px;color: rgb(194,83,111);"><i ></i>&nbsp;Attendance</h1>
 		<div class="container">
 			<div class="row">
 						 <div style="height: 100px auto;background-color: white;border-radius: 20px;text-align: center"  class="table-responsive-sm">

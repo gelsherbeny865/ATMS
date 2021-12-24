@@ -67,10 +67,11 @@ CREATE TABLE `employee` (
 
 INSERT INTO `employee` (`id`, `name`, `email`, `phone`, `password`, `department_id`, `address`, `birthday`, `role`, `late_id`) VALUES
 (1, 'admin', 'admin@gmail.com', '01111241705', 'admin', 1, 'kafr', '2000-12-09', 1, 1),
-(2, 'sara', 'sara@gmail.com', '0155817847', 'sara301', 1, 'Dsok', '2000-12-08', 2, 5),
-(3, 'aya', 'aya@gmail.com', '01111241705', 'aya20', 2, 'alex', '2000-07-16', 2, 4),
-(4, 'gehad', 'gehad@gmail.com', '01111241705', 'gehad52', 3, 'tanta', '1999-12-22', 2, 3),
-(5, 'ahmed', 'ahmed@gmail.com', '0155817847', 'ahmed30', 3, 'giza', '0200-11-08', 3, 2);
+(2, 'sara', 'sara@gmail.com', '0155817847', 'sara301', 1, 'Dsok', '2000-12-08', 3, 5),
+(3, 'aya', 'aya@gmail.com', '01111241705', 'aya20', 2, 'alex', '2000-07-16', 3, 4),
+(4, 'gehad', 'gehad@gmail.com', '01111241705', 'gehad52', 3, 'tanta', '1999-12-22', 3, 3),
+(5, 'ahmed', 'ahmed@gmail.com', '0155817847', 'ahmed30', 3, 'giza', '2000-11-08', 3, 2);
+
 
 -- --------------------------------------------------------
 
@@ -97,7 +98,9 @@ INSERT INTO `late` (`late_id`, `user_no`, `password`, `user_name`, `datehire`, `
 (2, 'ahmed', 'ahmed30', 'ahmed', '2021-12-15', 3, ''),
 (3, 'gehad', 'gehad52', 'gehad', '2021-12-14', 3, 'OFFLINE'),
 (4, 'aya', 'aya20', 'aya', '2021-12-01', 2, 'ONLINE'),
+
 (5, 'sara', 'sara301', 'sara', '2021-12-02', 1, 'ONLINE');
+
 
 -- --------------------------------------------------------
 
