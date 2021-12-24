@@ -30,7 +30,7 @@ if(isset($_SESSION['USER_ID'])){
 if(isset($_POST['submit'])){
 	$name=mysqli_real_escape_string($con,$_POST['name']);
 	$email=mysqli_real_escape_string($con,$_POST['email']);
-	$mobile=mysqli_real_escape_string($con,$_POST['phone']);
+	$mobile=mysqli_real_escape_string($con,$_POST['']);
 	$password=mysqli_real_escape_string($con,$_POST['password']);
 	$department_id=mysqli_real_escape_string($con,$_POST['department_id']);
 	$address=mysqli_real_escape_string($con,$_POST['address']);
@@ -146,7 +146,7 @@ if(isset($_POST['submit'])){
 					<tbody>
 					<?php
 					$late_id=mysqli_real_escape_string($con,$_SESSION['late_id']);
-					$sqll=("SELECT * FROM `atms`.`late` WHERE `late_id` ='$late_id'ORDER BY `late_id` ASC");
+					$sqll=("SELECT * FROM `atms_system`.`late` WHERE `late_id` ='$late_id'ORDER BY `late_id` ASC");
 					$resl=mysqli_query($con ,$sqll);
 					$row=mysqli_fetch_assoc($resl);
 					
